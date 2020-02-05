@@ -6,16 +6,16 @@ from sklearn.manifold import TSNE
 from mpl_toolkits.mplot3d import axes3d
 from sklearn.decomposition import PCA
 
-with open("data/lurd.txt") as lurdFile:
+with open("data/biglurd.txt") as lurdFile:
     text = lurdFile.read()
     text = text.split('\n')
     labels = []
     features = []
-    for LableIndex in range(1531):
-        startIndex = LableIndex*2000+LableIndex
+    for LableIndex in range(9452):
+        startIndex = LableIndex*4000+LableIndex
         labels.append(text[startIndex])
         features.append([])
-        for valueIndex in range(2000):
+        for valueIndex in range(4000):
             features[LableIndex].append(float(text[startIndex+valueIndex+1]))
             pass
         pass
