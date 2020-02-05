@@ -6,6 +6,8 @@ from sklearn.manifold import TSNE
 from mpl_toolkits.mplot3d import axes3d
 from sklearn.decomposition import PCA
 
+# Inorder to make this repository public
+# the data folder has been removed
 with open("data/biglurd.txt") as lurdFile:
     text = lurdFile.read()
     text = text.split('\n')
