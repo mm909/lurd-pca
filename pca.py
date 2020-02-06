@@ -11,14 +11,17 @@ from sklearn.decomposition import PCA
 # Inorder to make this repository public
 # the data folder has been removed
 
+file = "data/8kFullWords.txt"
+featureCount = 8000
+samples = 10983
 # file = "data/biglurd.txt"
 # featureCount = 4000
 # samples = 9452
-file = "data/lurd.txt"
-featureCount = 2000
-samples = 1531
+# file = "data/lurd.txt"
+# featureCount = 2000
+# samples = 1531
 
-n_components = 500
+n_components = 2000
 
 print("Opening and reading data file...")
 with open(file) as lurdFile:
